@@ -10,16 +10,20 @@
 package IO::Socket::INET6;
 
 use strict;
+use warnings;
+
 our(@ISA, $VERSION);
 use IO::Socket;
 use Socket;
-use Socket6;
+# IO::Socket and Socket already import stuff here - possibly AF_INET6
+# and PF_INET6 so selectively import things from Socket6.
+use Socket6 (qw(AI_PASSIVE inet_ntop inet_pton getaddrinfo sockaddr_in6));
 use Carp;
 use Exporter;
 use Errno;
 
 @ISA = qw(IO::Socket);
-$VERSION = "2.51";
+$VERSION = "2.52";
 #Purpose: allow protocol independent protocol and original interface.
 
 my $EINVAL = exists(&Errno::EINVAL) ? Errno::EINVAL() : 1;
@@ -579,6 +583,9 @@ This program is based on L<IO::Socket::INET> by Graham Barr
 
 Modified by Rafael Martinez Torres <rafael.martinez@novagnet.com> and
 Euro6IX project.
+
+Modified further by Shlomi Fish <shlomif@iglu.org.il>, while disclaiming
+all copyrights.
 
 =head1 COPYRIGHT
 

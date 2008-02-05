@@ -1,0 +1,14 @@
+--- #YAML:1.0
+name:                IO-Socket-INET6
+version:             2.52
+abstract:            ~
+license:             ~
+generated_by:        ExtUtils::MakeMaker version 6.36
+distribution_type:   module
+requires:     
+    Socket6:                       0.12
+meta-spec:
+    url:     http://module-build.sourceforge.net/META-spec-v1.2.html
+    version: 1.2
+author:
+    - Shlomi Fish <shlomif@iglu.org.il>

@@ -1,14 +1,30 @@
---- #YAML:1.0
-name:                IO-Socket-INET6
-version:             2.52
-abstract:            ~
-license:             ~
-generated_by:        ExtUtils::MakeMaker version 6.36
-distribution_type:   module
-requires:     
-    Socket6:                       0.12
-meta-spec:
-    url:     http://module-build.sourceforge.net/META-spec-v1.2.html
-    version: 1.2
+---
+name: IO-Socket-INET6
+version: 2.53
 author:
-    - Shlomi Fish <shlomif@iglu.org.il>
+  - |-
+    This program is based on L<IO::Socket::INET> by Graham Barr
+    <gbarr@pobox.com> and currently maintained by the Perl Porters.
+  - |-
+    Modified by Rafael Martinez Torres <rafael.martinez@novagnet.com> and
+    Euro6IX project.
+  - |-
+    Modified further by Shlomi Fish <shlomif@iglu.org.il>, while disclaiming
+    all copyrights.
+abstract: Object interface for AF_INET|AF_INET6 domain sockets
+license: perl
+resources:
+  license: http://dev.perl.org/licenses/
+requires:
+  IO::Socket: 0
+  Socket6: 0.12
+build_requires:
+  Test::More: 0
+provides:
+  IO::Socket::INET6:
+    file: lib/IO/Socket/INET6.pm
+    version: 2.53
+generated_by: Module::Build version 0.2808
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2

@@ -1,6 +1,6 @@
 ---
 name: IO-Socket-INET6
-version: 2.54
+version: 2.55
 author:
   - |-
     This program is based on L<IO::Socket::INET> by Graham Barr
@@ -23,7 +23,7 @@ build_requires:
 provides:
   IO::Socket::INET6:
     file: lib/IO/Socket/INET6.pm
-    version: 2.54
+    version: 2.55
 generated_by: Module::Build version 0.2808
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html

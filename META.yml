@@ -1,6 +1,6 @@
 ---
 name: IO-Socket-INET6
-version: 2.56
+version: 2.57
 author:
   - |-
     This program is based on L<IO::Socket::INET> by Graham Barr
@@ -15,16 +15,18 @@ abstract: Object interface for AF_INET|AF_INET6 domain sockets
 license: perl
 resources:
   license: http://dev.perl.org/licenses/
+build_requires:
+  Test::More: 0
 requires:
   IO::Socket: 0
   Socket6: 0.12
-build_requires:
-  Test::More: 0
+configure_requires:
+  Module::Build: 0.35
 provides:
   IO::Socket::INET6:
     file: lib/IO/Socket/INET6.pm
-    version: 2.56
-generated_by: Module::Build version 0.2808
+    version: 2.57
+generated_by: Module::Build version 0.35
 meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.2.html
-  version: 1.2
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4

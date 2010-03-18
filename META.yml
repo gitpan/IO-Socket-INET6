@@ -1,32 +1,26 @@
 ---
-name: IO-Socket-INET6
-version: 2.57
+abstract: 'Object interface for AF_INET|AF_INET6 domain sockets'
 author:
-  - |-
-    This program is based on L<IO::Socket::INET> by Graham Barr
-    <gbarr@pobox.com> and currently maintained by the Perl Porters.
-  - |-
-    Modified by Rafael Martinez Torres <rafael.martinez@novagnet.com> and
-    Euro6IX project.
-  - |-
-    Modified further by Shlomi Fish <shlomif@iglu.org.il>, while disclaiming
-    all copyrights.
-abstract: Object interface for AF_INET|AF_INET6 domain sockets
-license: perl
-resources:
-  license: http://dev.perl.org/licenses/
+  - "This program is based on L<IO::Socket::INET> by Graham Barr\n<gbarr@pobox.com> and currently maintained by the Perl Porters."
+  - "Modified by Rafael Martinez Torres <rafael.martinez@novagnet.com> and\nEuro6IX project."
+  - "Modified further by Shlomi Fish <shlomif@iglu.org.il>, while disclaiming\nall copyrights."
 build_requires:
   Test::More: 0
-requires:
-  IO::Socket: 0
-  Socket6: 0.12
 configure_requires:
-  Module::Build: 0.35
-provides:
-  IO::Socket::INET6:
-    file: lib/IO/Socket/INET6.pm
-    version: 2.57
-generated_by: Module::Build version 0.35
+  Module::Build: 0.36
+generated_by: 'Module::Build version 0.3603'
+license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
+name: IO-Socket-INET6
+provides:
+  IO::Socket::INET6:
+    file: lib/IO/Socket/INET6.pm
+    version: 2.58
+requires:
+  IO::Socket: 0
+  Socket6: 0.12
+resources:
+  license: http://dev.perl.org/licenses/
+version: 2.58

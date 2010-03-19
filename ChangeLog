@@ -1,3 +1,9 @@
+2010-03-19 Shlomi Fish <shlomif@iglu.org.il>
+	* Syntax change to adapt for older Perls:
+		- https://rt.cpan.org/Ticket/Display.html?id=54656
+		- Thanks to paul.
+	* New Release IO-Socket-INET6-2.59
+
 2010-03-18 Shlomi Fish <shlomif@iglu.org.il>
 	* Applied a patch by Steffen Ullrich, fixing:
 	https://rt.cpan.org/Ticket/Display.html?id=54656

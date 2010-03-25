@@ -9,6 +9,16 @@ build_requires:
 configure_requires:
   Module::Build: 0.36
 generated_by: 'Module::Build version 0.3603'
+keywords:
+  - inet6
+  - input
+  - internet
+  - ipv6
+  - network
+  - networking
+  - output
+  - socket
+  - sockets
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -17,10 +27,17 @@ name: IO-Socket-INET6
 provides:
   IO::Socket::INET6:
     file: lib/IO/Socket/INET6.pm
-    version: 2.59
+    version: 2.60
 requires:
+  Carp: 0
+  Errno: 0
+  Exporter: 0
   IO::Socket: 0
+  Socket: 0
   Socket6: 0.12
+  strict: 0
+  warnings: 0
 resources:
   license: http://dev.perl.org/licenses/
-version: 2.59
+  repository: http://svn.berlios.de/svnroot/repos/web-cpan/IO-Socket-INET6/
+version: 2.60

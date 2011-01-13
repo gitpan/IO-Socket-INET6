@@ -8,7 +8,7 @@ build_requires:
   Test::More: 0
 configure_requires:
   Module::Build: 0.36
-generated_by: 'Module::Build version 0.3607'
+generated_by: 'Module::Build version 0.3617'
 keywords:
   - inet6
   - input
@@ -27,7 +27,7 @@ name: IO-Socket-INET6
 provides:
   IO::Socket::INET6:
     file: lib/IO/Socket/INET6.pm
-    version: 2.65
+    version: 2.66
 requires:
   Carp: 0
   Errno: 0
@@ -40,4 +40,4 @@ requires:
 resources:
   license: http://dev.perl.org/licenses/
   repository: http://svn.berlios.de/svnroot/repos/web-cpan/IO-Socket-INET6/
-version: 2.65
+version: 2.66

@@ -28,7 +28,7 @@ name: IO-Socket-INET6
 provides:
   IO::Socket::INET6:
     file: lib/IO/Socket/INET6.pm
-    version: 2.68
+    version: 2.69
 requires:
   Carp: 0
   Errno: 0
@@ -40,5 +40,5 @@ requires:
   warnings: 0
 resources:
   license: http://dev.perl.org/licenses/
-  repository: http://svn.berlios.de/svnroot/repos/web-cpan/IO-Socket-INET6/
-version: 2.68
+  repository: https://bitbucket.org/shlomif/perl-io-socket-inet6
+version: 2.69

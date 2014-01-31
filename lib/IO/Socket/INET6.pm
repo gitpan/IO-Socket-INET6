@@ -12,6 +12,8 @@ package IO::Socket::INET6;
 use strict;
 use warnings;
 
+use 5.008;
+
 our(@ISA, $VERSION);
 
 # Do it so we won't import any symbols from IO::Socket which it does export
@@ -41,7 +43,7 @@ use Carp;
 use Errno;
 
 @ISA = qw(IO::Socket);
-$VERSION = "2.71";
+$VERSION = "2.72";
 #Purpose: allow protocol independent protocol and original interface.
 
 my $EINVAL = exists(&Errno::EINVAL) ? Errno::EINVAL() : 1;
